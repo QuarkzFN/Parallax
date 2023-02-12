@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Pratiquez, apprenez et comprenez les langages HTML, CSS et JavaScript avec des explications simples pour les débutants grâce à Parallax !">
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" href="root.css">
+    <link rel="stylesheet" href="Fontawesome/css/all.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon//apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon//favicon-16x16.png">
+    <link rel="manifest" href="favicon//site.webmanifest">
+    <link rel="mask-icon" href="favicon//safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Parallax - Documentation</title>
+</head>
+
+<body>
+
+    <button type="button" aria-label="toggle curtain navigation" class="nav-toggler">
+        <span class="line l1"></span>
+        <span class="line l2"></span>
+        <span class="line l3"></span>
+    </button>
+
+    <a href="#" class="logo">Parallax</a>
+    
+    <header>
+        <ul>
+            <li><a class="active">Acceuil</a></li>
+            <li><a href="#sec">A propos</a></li>
+            <li><a href="flex.html">Travail</a></li>
+            <li><a href="#">Contact</a></li>
+            <li>
+                <div id="theme-toggler">
+                    <span class="material-symbols-sharp theme-active" id="light-theme">light_mode</span>
+                    <span class="material-symbols-sharp" id="dark-theme">dark_mode</span>
+                </div>
+            </li>
+        </ul>
+    </header>
+    
+        <section>
+            <img src="img/stars.png" id="stars">
+            <img src="img/moon.png" id="moon" class="object">
+            <img src="img/Soleil.png" id="sun" class="object">
+            <img src="img/mountains_behind.png" id="mountains_behind">
+            <h2 id="text">HTML, CSS, JS</h2>
+            <a href="#sec" id="btn-a">
+                <p id="btn">Explorer</p>
+            </a>
+            <img src="img/mountains_front.png" id="mountains_front">
+        </section>
+
+        <div class="sec" id="sec">
+            <h2>HTML</h2>
+            <p class="text-indent">L'HTML, de son nom complet <b>H</b>yper<b>T</b>ext <b>M</b>arkup <b>L</b>anguage (en français, langage de balisage hypertext), est un langage de balisage créé vers les années 1989 qui ne cesse d'évoluer. En effet depuis sa création l'HTML a connu différentes versions : en 1989, HTML1.0 fait son apparition, puis HTML2.0 en 1995, en 1997 c'est au tour d'HTML3 et HTML4, et enfin HTML5 en 2014. Aujourd'hui il est utilisé par plus de 92% des sites webs et applications mobiles, ce qui fait de lui le langage le plus utilisé par les développeurs web.</p>
+                <br><br>
+            <p class="text-indent">Il fonctionne, comme son nom l'indique, avec des <b>balises</b>, c'est à dire des éléments qui dictent au navigateur ce qu'il doit afficher. Ces balises sont caractérisées par des chevrons (<,>), par exemple la balise <b><</b><b>video</b><b>></b> qui permet de lire une vidéo. Elles ont aussi ce que l'on appelle des <b>attributs</b>, c'est à dire ce qui définit les propriétés de la balise. Par exemple notre balise <b> <</b><b>video</b><b>></b> peut avoir comme attributs <b>autoplay</b>, qui permet de lire la vidéo automatiquement, <b>loop</b>, qui permet de lire la vidéo en boucle, et encore pleins d'autres.</p> <br><br>
+            <p class="text-indent">Certaines balises sont dites <b>vides</b>. En effet, la plupart des balises HTML
+                commencent avec une balise ouvrante : <b><</b>...<b>></b>, puis une balise fermante : <b><</b><b>/</b>...<b>></b>. Mais certaines n'ont pas besoin de balise fermante : les balises vides. C'est le cas de la balise <b><</b><b>img</b><b>></b>, en HTML elle s'écrit <b><</b><b>img</b> <b>src="#" alt="Image"</b><b>></b>. L'attribut <b>src</b> est simplement le diminutif de <b>source</b>, il définit donc la source de l'image (le lien de l'image si elle vient d'Internet, ou l'emplacement du fichier si elle est téléchargée sur le PC). Et l'attribut <b>alt</b> définit le <b>texte alternatif</b>, le texte définit par le développeur qui est affiché lorsque l'image ne peut pas se charger. On y met généralement la description de l'image.</p>
+                <br><br>
+            <p>Voici comment l'image va s'afficher si elle ne peut pas se charger :
+                <br>
+            <img class="image_alt" src="#" alt="Image"></p>
+                <br><br>
+            <p class="text-indent">En HTML, la <b>sémantique</b> est très importante pour le développeur mais aussi pour
+                toutes les personnes qui souhaitent regarder ou travailler sur le code du site. Pour lui donner du sens,
+                on le structure en 2 grandes parties :</p>
+                <br><br>
+            <p class="text-indent">- La <b>tête</b> représentée en HTML par la balise <b><</b><b>head</b><b>></b>, qui contiendra tous les "paramètres" du site. Par exemple c'est ici qu'on relie les feuilles de style qui contiennent tout le style que le développeur a affecté au site, on y met également les balises <b><</b><b>meta</b><b>></b>. Elles définissent comment le navigateur doit se comporter avec certaines fonctionalités. Par exemple la balise <b> <</b><b>meta charset="UTF-8"</b><b>></b> bien qu'elle ait l'air compliquée, indique simplement au navigateur qu'il doit utiliser les caractères spéciaux. Sans cette balise le navigateur afficherait les "é" comme ceci : "Ã©" </p>
+                <br>
+            <p class="text-indent">- Et le <b>corps</b>, représenté par la balise <b><</b><b>body</b><b>></b>, c'est ici que l'on met tout ce qui sera affiché sur le site, par exemple tout ce que vous venez de voir fait partie du corps. Á l'intérieur de celui-ci on retrouve 3 sous-parties :</p>
+                <br>
+            <p class="text-indent-double">• <b>L'entête</b>, à ne pas confondre avec la tête, elle est représentée par
+                la balise <b><</b><b>header</b><b>></b>. La plupart du temps les développeurs y mettent la <b>"navbar"</b>, c'est tout simplement l'anglais de <b>"barre de navigation"</b>, on y retrouve généralement une barre de recherche, un lien pour contacter les développeurs, un lien pour accéder à son profil, etc.</p>
+                <br>
+            <p>Par exemple, voici la barre de navigation de Twitch :
+                <br>
+            <img class="image_code" src="img/navbar-twitch.png" alt="Barre de navigation de Twitch"></p>
+                <br>
+            <p class="text-indent-double">• Le <b>contenu principal</b>, il est généralement représenté soit par la
+                balise <b><</b><b>main</b><b>></b>, soit par une division (<b><</b><b>div</b><b>></b>) avec la classe "main". Il contient, comme son nom l'indique, le contenu principal du site (images, vidéos, textes, etc).</p>
+                <br>
+            <p class="text-indent-double">• Le <b>pied de page</b>, avec la balise <b><</b><b>footer</b><b>></b>, c'est généralement ici que l'on met les liens renvoyants vers les informations les moins intéressantes, par exemple les conditions d'utilisation, les informations générales, etc.</p>
+                <br>
+            <p>Par exemple, voici le pied de page du site de la Fnac :
+            <img src="img/footer fnac.png" alt="Pied de page du site de la Fnac" class="image_code"></p>
+                <br><br>
+            <p class="text-indent">Il est donc important de structurer son code en parties et sous-parties, mais aussi
+                grâce à des balises de sémantiques telles que <b><</b><b>section</b><b>></b>, <b><</b><b>header</b><b>></b>, <b><</b><b>footer</b><b>></b>, <b><</b><b>article</b><b>></b>, <b><</b><b>nav</b><b>></b>, <b><</b><b>main</b><b>></b>, et encore d'autres.</p>
+                <br>
+            <p>Toutes ces règles nous permettent de passer de ceci :
+                <br>
+            <img src="img/Code illisible.png" alt="Code lisible" class="image_code2">
+                <br><br>
+            à ceci :
+                <br>
+            <img src="img/Code lisible.png" alt="Code illisible" class="image_code2"></p>
+                <br><br>
+            <p class="text-indent">Internet étant un réseau en étoile, il fonctionne beaucoup avec des <b>liens</b>,
+                c'est à dire un "bouton" qui nous redirige vers une autre page. L'HTML étant le langage principal
+                d'Internet il est important pour un développeur de savoir créer des liens. Pour cela on utilise ce que
+                l'on appelle un <b>lien hypertext</b> caractérisé par la balise <b><</b><b>a</b><b>></b> suivie de l'attribut <b>"href"</b>,qui est tout simplement le lien auquel le bouton va nous rediriger. Par exemple si vous <b><a href="https://developer.mozilla.org/fr/docs/Web/HTML" class="link_HTML">cliquez ici</a></b>, vous serez amenés sur la page de documentation HTML. Les liens permettent de donner du dynamisme au site et de rendre la navigation plus facile pour l'utilisateur.</p>
+
+                <br><br><br>
+
+            <h2>CSS</h2>
+
+            <p class="text-indent">Le CSS, de son nom complet <b>C</b>ascading <b>S</b>tyle <b>S</b>heets (en français, feuilles de style en cascade) est un langage de programmation créé en 1994 (beta). En 1996 CSS 1 est développé et marque le réel début du CSS. Ensuite, en 1997, c'est CSS 2 qui est créé, puis CSS 2.1 en 2001 qui corrige CSS 2 sur de nombreux détails. Puis CSS 3 en 1999, et enfin CSS 4 a été développé très récemment, en 2019. CSS est développé par niveaux imbriqués et non par versions successives comme HTML, c'est à dire que CSS 3 inclut CSS 2 qui inclut CSS 1.</p>
+                <br>
+            <p class="text-indent">Il fonctionne le plus souvent avec un langage de balisage : HTML, XML, etc. CSS est tout aussi simple qu'HTML puisqu'il suffit de séléctionner l'élément auquel on veut apporter un style et de lui donner les valeurs que l'on veut. Par exemple pour changer la couleur d'un lien en blanc, on va séléctionner ce dernier (<b><</b><b>a</b><b>></b>), puis on va lui donner la valeur <b>color: #fff;</b> #fff étant le code hexadécimal du blanc.</p>
+                <br>
+            <p>Pour utiliser CSS on utilise cette syntaxe :
+                <br>
+                <img src="img/exemple css.png" alt="Exemple de code en CSS" class="image_code3 syntaxe_css" draggable="false">
+            </p>
+                <br>
+            <p class="text-indent">Sans CSS, Internet serait horriblement ennuyant. En effet HTML est un langage qui n'est pas fait pour être beau mais simplement pratique. CSS permet de le rendre beau et agréable. Par exemple ce site : </p>
+                <br>
+            <img src="img/Site avec css.png" alt="Site avec CSS" class="image_code">
+                <br><br>
+            <p>En voici une partie sans CSS :
+            <img src="img/Site sans css.png" alt="Site sans CSS" class="image_code site_sans_css"></p>
+
+                <br><br><br>
+
+            <h2>JavaScript</h2>
+            <p class="text-indent">JavaScript, ou JS, est un langage de programmation créé en 1995 qui a connu beaucoup de changement. Tout d'abord vous devez savoir que JS repose sur un standard : "ES" (<b>E</b>CMA<b>S</b>cript), donc les différentes versions de JS sont les mêmes que celle de l'ES.</p>
+                <br>
+            <p>
+                <ul class="es_versions">
+                    <li class="es_version">ES6 = 2015</li>
+                    <li class="es_version">ES7 = 2016</li>
+                    <li class="es_version">ES8 = 2017</li>
+                    <li class="es_version">ES9 = 2018</li>
+                    <li class="es_version">ES10 = 2019</li>
+                    <li class="es_version">ES11 = 2020</li>
+                    <li class="es_version">ES12 = 2021</li>
+                    <li class="es_version">ES13 = 2022</li>
+                    <li class="es_version">ES14 = 2023</li>
+                </ul>
+            </p>
+                <br>
+            <p class="text-indent">JavaScript permet d'implémenter des mécanismes complexes sur un site web. En effet, à chaque fois qu'une page web fait plus que simplement afficher du contenu statique, c'est à dire afficher du contenu mis à jour à la demande, des cartes interactives, des animations 2D/3D, des menus vidéo défilants, ou autre, JS a de fortes chances d'être impliqué. Par exemple le mode jour/nuit de ce site est fait grâce à JS.</p>
+                <br><br>
+            <p class="text-indent">En JS, comme en Python, on utilise les variables. Celle-ci nous permettent d'affecter une valeur à un mot et de la réutiliser plus tard dans notre code. Pour déclarer une variable en JS il y a 3 façon de faire :</p>
+                <br>
+            <p class="text-indent-double">• <b>Le const</b> (pour constante).</p>
+            <p class="text-indent-double">• <b>Le var</b> (pour variable).</p>
+            <p class="text-indent-double">• <b>Le let</b> (laisser en français).</p>
+                <br>
+            <p class="text-indent">Il n'y a aucune différence entre let et var, en revanche, const ne peut pas être modifié. En effet, avec let et var on peut déclarer une variable avec une valeur à un moment, et plus tard lui réaffecter une autre valeur, chose que l'on ne peut pas faire avec const :</p>
+            <img src="img/exemple let.png" alt="Exemple de code utilisant let" class="image_code4 width40" draggable="false">
+                <br><br><br>
+            <p>Ensuite, il existe plusieurs <b>"types"</b> :</p>
+                <br>
+            <p class="text-indent-double">• <b>L'object</b> est caractérisé par des accolades. Il peut contenir une variable qui elle même contient un text, un nombre, etc. Par exemple dans l'objet <b>"image"</b>, pour séléctionner la variable <b>"description"</b>, nous allons faire <b>image.description</b> :</p>
+            <img src="img/exemple js.png" alt="Exemple de code en JavaScript" class="image_code4 width40" draggable="false">
+                <br><br>
+            <p class="text-indent-double">• <b>Les string</b> sont littéralement juste des guillemets, oui c'est tout. La seule chose à savoir est qu'il ne faut y mettre que du texte. Par exemple <b>"Bonjour"</b>.</p>
+                <br>
+            <p class="text-indent-double">• <b>Le number</b> est aussi simple que les string car c'est un simple nombre, sans guillements, parenthèses ou accolades. Par exemple on dirait <b>number = 9</b>.</p>
+                <br>
+            <p class="text-indent-double">• <b>L'array</b>, il signifie <b>"tableau"</b> en anglais, et est caractérisé par des crochets. C'est un tableau de valeurs qui peuvent aussi bien être des string, numbers, variables, etc. Il est important de savoir qu'en JS la première valeur d'un tableau n'est pas la première, mais la zérotième. Par exemple dans l'array <b>Course</b>, contenant les valeurs <b>"1er"</b>, <b>"2ème"</b> et <b>"3ème"</b>, pour séléctionner la valeur <b>"2ème"</b>, on dirait <b>course[1]</b> :</p>
+            <img src="img/exemple array.png" alt="Exemple d'un tableau en JavaScript" class="image_code4 width40" draggable="false">
+                <br><br>
+            <p class="text-indent-double">• <b>Le bigint</b>, il est très peu utilisé car il s'agit enfaite d'un nombre et d'une lettre. Par exemple <b>1236792n</b>.</p>
+                <br><br>
+            <p class="text-indent-double">• <b>La fonction</b>, son nom est assez explicite car elle execute simplement une fonction prédéfinie, c'est à dire qu'on crée la fonction et on l'appelle lorsqu'on en a besoin. Elle se note <b>nom_de_la_fonction()</b>. Par exemple, <b>fondRouge()</b> ferait en sorte que lorsqu'on l'appelle elle mette le fond en rouge :</p>
+                <br>
+            <div class="red_bg_container" id="red_bg_container">
+
+                <button onclick="fondRouge()" id="btn">Mettre le fond en rouge</button>
+
+            </div>
+                <br><br>
+            <p class="text-indent-double">• <b>Le typeof</b>, comme son nom l'indique, il sert à connaitre le type d'une variable. Par exemple, nous avons une variable <b>"unknown"</b>, et nous voulons connaitre le type de cette varialbe. Nous allons simplement faire :</p>
+            <img src="img/exemple typeof.png" alt="Exemple de code utilisant un typeof" class="image_code6 width40" draggable="false">
+                <br><br>
+            <p class="text-indent-double">• <b>Le boolean</b>, il y a juste 2 possibilités avec ce dernier : <b>true</b> (vrai), ou <b>false</b> (faux). Ils sont souvent utilisés pour les boucle en Python, mais en JavaScript ils le sont plus pour les conditions et les comparaisons. Par exemple :</p>
+            <img src="img/exemple condition boolean.png" alt="Exemple de code utilisant un boolean dans une condition" class="image_code5 width40" draggable="false">
+                <br><br>
+            <p class="text-indent-double">• <b>Undefined</b>, il est utilisé généralement pour les conditions ou pour afficher une erreur. Par exemple :</p>
+            <img src="img/exemple condition undefined.png" alt="Exemple de code utilisant undefined dabs une condition" class="image_code6 width40" draggable="false">
+                
+                <br><br><br>
+
+            <div class="end">
+                <p class="text-center">Une fois que vous maitrisez ces 3 langages voici ce que vous pouvez faire</p>
+            </div>
+                <br><br><br><br>
+            <a href="flex.html" class="styled_btn">
+                <span>Start</span>
+                <div class="liquid"></div>
+            </a>
+        </div>
+
+    <script src="home.js"></script>
+</body>
+
+</html>

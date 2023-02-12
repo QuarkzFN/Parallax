@@ -1,0 +1,20 @@
+/* LIGHT MODE VARIABLES */
+
+:root {
+    --background1: linear-gradient(#7597de, #4765a5);
+    --background2: #0b3055;
+    --btn-bg: #fff;
+    --btn-color: #2b1055;
+    --background-red-container: #de0611;
+}
+
+
+
+/* DARK MODE VARIABLES */
+
+.dark-theme-variable {
+    --background1: linear-gradient(#2b1055, #7597de);
+    --background2: #061829;
+    --btn-bg: #2b1055;
+    --btn-color: #fff;
+}
